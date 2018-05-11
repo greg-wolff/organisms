@@ -23,7 +23,6 @@ const createSwitch = (collide) => {
   const x = random(90, window.innerWidth - 140);
   const y = random(90, window.innerHeight - 140);
   let collision = false;
-  // console.log(positions)
   positions.forEach(el => {
     if ((el.x < x + 40) && (el.x + 40 > x) && (el.y < y + 35) && (el.y + 35 > y))
       collision = true;
@@ -59,7 +58,6 @@ const createSwitches = (amt, collide) => {
         if (positions.length == last) curr++;
         createSwitch(false);
         last = positions.length;
-        console.log(positions.length);
       }
   }
 };
