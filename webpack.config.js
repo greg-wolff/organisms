@@ -25,7 +25,7 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'DGTTGSWAL',
+        title: 'untitled 2',
         minify: {
           collapseWhitespace: true,
           removeComments: true,
