@@ -1,5 +1,5 @@
 {
-  "name": "untitled 2",
+  "name": "untitled2",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.21.0",
+    "uuid": "^3.2.1",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.2"
   }
