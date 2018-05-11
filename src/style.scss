@@ -4,3 +4,14 @@
 body {
   position: relative;
 }
+
+footer {
+  position: absolute;
+  right: 0;
+  background: #f5f5f5;
+  font-family: courier;
+  font-size: 0.75em;
+  padding: 4px 6px;
+  border-radius: 2px;
+  margin: 1px;
+}
