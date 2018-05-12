@@ -18,7 +18,7 @@ const mobile = () =>
   );
 
 // set margins per device
-const margin = mobile() ? {'a': 60, 'b': 125} : {'a': 90, 'b': 150};
+const margin = mobile() ? {'a': -50, 'b': -50} : {'a': 90, 'b': 150};
 
 const behavior = s => {
   if (s.mood) {
@@ -66,9 +66,8 @@ const createSwitches = (amt, collide) => {
   else {
     let last = null;
     let tries = 0;
-    const timeout = 0.21 * (window.innerWidth + window.innerHeight) - 211.387;
+    const timeout = mobile() ? 10 : 0.21 * (window.innerWidth + window.innerHeight) - 196.677;
     while (positions.length <= amt && tries < timeout) {
-      console.log('arr: ', positions.length, '\nlast: ', last, '\ntries: ', tries)
       if (positions.length == last) tries++;
       createSwitch(false);
       if (positions.length > last) tries = 0;
