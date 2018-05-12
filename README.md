@@ -10,4 +10,4 @@ each series of switches is randomly generated upon the browser canvas and set to
 simply use `npm run develop` and head to localhost:8080 to use locally or use `npm run build` to build the contents to `build/`
 
 ## credits
-- [iOS switch](https://github.com/mnmly/ios7-switch) by @mnmly
+- [iOS switch](https://github.com/mnmly/ios7-switch) by [@mnmly](https://github.com/mnmly)
