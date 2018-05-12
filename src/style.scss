@@ -33,3 +33,9 @@ section {
   display: flex;
   justify-content: space-between;
 }
+
+@media(max-width: 960px) {
+  footer {
+    text-decoration: underline;
+  }
+}
