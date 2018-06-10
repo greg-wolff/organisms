@@ -17,9 +17,6 @@ const mobile = () =>
     (navigator.userAgent || navigator.vendor || window.opera).substr(0, 4)
   );
 
-//prevent mobile movement
-document.body.addEventListener('touchmove', function(e){ e.preventDefault(); }, { passive: false });
-
 // set margins per device
 const margin = mobile() ? {'a': -50, 'b': -50} : {'a': 90, 'b': 150};
 
