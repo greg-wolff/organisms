@@ -79,8 +79,8 @@ const createSwitches = (amt, collide) => {
 createSwitches(125, false);
 
 let toggle = false;
-document.getElementsByTagName("footer")[0].addEventListener(`click`, e =>
+let toggler = (e) =>
   ((e.target.localName != "a") && (toggle = !toggle)) ? 
-  e.target.innerHTML = "<section><div>untitled 2 by greg wolff</div><div><a href=\"https://github.com/greg-wolff/untitled-2\" target=\"_blank\">source</a></div></section><br><br> each series of switches is randomly generated upon the browser canvas and set to change their behavior randomly between 10 and 20 seconds. behavior states include (in order of likeliness):<br>'sleepy' — switching randomly every 10 to 20 seconds,<br>'active' — switching randomly every 5 to 10 seconds, and<br>'agitated' — switching back and forth repeatedly.<br>" :
-  !(e.target.localName == "a") && (e.target.innerHTML = "untitled 2 by greg wolff")
-)
+  e.target.innerHTML = "untitled 2 by greg wolff" :
+  !(e.target.localName == "a") && (e.target.innerHTML = "<section><div>untitled 2 by greg wolff</div><div><a href=\"https://github.com/greg-wolff/untitled-2\" target=\"_blank\">source</a></div></section><br><br> each series of switches is randomly generated upon the browser canvas and set to change their behavior randomly between 10 and 20 seconds. behavior states include (in order of likeliness):<br>'sleepy' — switching randomly every 10 to 20 seconds,<br>'active' — switching randomly every 5 to 10 seconds, and<br>'agitated' — switching back and forth repeatedly.<br>")
+document.getElementsByTagName("footer")[0].addEventListener(`click`, toggler);
