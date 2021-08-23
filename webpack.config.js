@@ -28,7 +28,7 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        title: 'untitled 2',
+        title: 'organisms',
         minify: {
           collapseWhitespace: true,
           removeComments: true,
