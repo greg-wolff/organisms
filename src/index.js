@@ -82,5 +82,5 @@ let toggle = false;
 let toggler = (e) =>
   ((e.target.localName != "a") && (toggle = !toggle)) ? 
   e.target.innerHTML = "\"organisms\" by greg wolff" :
-  !(e.target.localName == "a") && (e.target.innerHTML = "\"organisms\" by greg wolff<br><br>each series of switches is randomly generated upon the browser canvas and set to change their behavior between 10 and 20 seconds.<br><br>behavior states include (in order of likeliness):<br>'sleepy' — switching randomly every 10 to 20 seconds<br>'active' — switching randomly every 5 to 10 seconds<br>'agitated' — switching back and forth repeatedly<br><br><a href=\"https://github.com/greg-wolff/untitled-2\" target=\"_blank\">(source)</a>")
+  !(e.target.localName == "a") && (e.target.innerHTML = "\"organisms\" by greg wolff<br><br>each series of switches is randomly generated upon the browser canvas and set to change their behavior between 10 and 20 seconds.<br><br>behavior states include (in order of likeliness):<br>'sleepy' — switching randomly every 10 to 20 seconds<br>'active' — switching randomly every 5 to 10 seconds<br>'agitated' — switching back and forth repeatedly<br><br><a href=\"https://github.com/greg-wolff/organisms\" target=\"_blank\">(source)</a>")
 document.getElementsByTagName("footer")[0].addEventListener(`click`, toggler);
